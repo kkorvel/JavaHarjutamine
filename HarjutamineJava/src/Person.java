@@ -9,7 +9,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-
+    //global variable
     private String name;
 
     public Integer getAge() {
@@ -57,6 +57,7 @@ public class Person {
         }
     }
     public static void Arvuti(){
+        //local variable
         int a;
         int b;
 
