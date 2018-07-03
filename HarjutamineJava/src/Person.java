@@ -2,15 +2,19 @@ import java.util.Scanner;
 
 //klass
 public class Person {
+     //global variable
+    private String name;
+    private Integer age;
+    
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
+        //this seob local variable global variable-ga.
         this.name = name;
     }
-    //global variable
-    private String name;
+   
 
     public Integer getAge() {
         return age;
@@ -20,7 +24,7 @@ public class Person {
         this.age = age;
     }
 
-    private Integer age;
+    
 
     public static void main(String[] args) {
         //java objekt
