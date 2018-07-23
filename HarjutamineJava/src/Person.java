@@ -2,19 +2,15 @@ import java.util.Scanner;
 
 //klass
 public class Person {
-     //global variable
-    private String name;
-    private Integer age;
-    
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        //this seob local variable global variable-ga.
         this.name = name;
     }
-   
+
+    private String name;
 
     public Integer getAge() {
         return age;
@@ -24,7 +20,7 @@ public class Person {
         this.age = age;
     }
 
-    
+    private Integer age;
 
     public static void main(String[] args) {
         //java objekt
@@ -39,6 +35,7 @@ public class Person {
         Testing(0);
         Arvuti();
         Arvutajad(5,9);
+        Tervitaja("Koit");
     }
     public static void Tervitus(String name){
         System.out.println("Tere!" + name);
@@ -61,7 +58,6 @@ public class Person {
         }
     }
     public static void Arvuti(){
-        //local variable
         int a;
         int b;
 
@@ -77,6 +73,9 @@ public class Person {
         int vastus = a + b;
         System.out.println("Vastuseks on: " + vastus);
         return vastus;
+    }
+    public static String Tervitaja(String name){
+        return "Tere" + name;
     }
 
 }
