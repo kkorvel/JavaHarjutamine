@@ -36,6 +36,8 @@ public class Person {
         Arvuti();
         Arvutajad(5,9);
         Tervitaja("Koit");
+        Person p = new Person();
+        p.Tervist("Koit");
     }
     public static void Tervitus(String name){
         System.out.println("Tere!" + name);
@@ -44,6 +46,7 @@ public class Person {
         System.out.println(vanus);
         return vanus;
     }
+    //staticut saab niisama välja kutsuda
     public static void Testing(Integer kordaja){
         //väärtustamine
         String lipuke = "****************************";
@@ -76,6 +79,10 @@ public class Person {
     }
     public static String Tervitaja(String name){
         return "Tere" + name;
+    }
+    //non staticut saab kutsuda välja objekti kaudu!
+    public void Tervist(String name){
+        System.out.println("Tere" + name);
     }
 
 }

@@ -13,7 +13,7 @@ public class Array {
         Scanner klaviatuur = new Scanner(System.in);
         System.out.println("Mida sa soovid osta! Kas Apelsini, Kohvi, Mett, Hapukoort?");
         String vastus = klaviatuur.next();
-        System.out.println("Tere! Sa ostid just "+ ostukorv);
+        System.out.println("Tere! Sa ostid just "+ vastus);
         }
 
 
