@@ -10,10 +10,14 @@ public class Array {
         ostukorv[0] = "Apelsin";
         ostukorv[1] = "Kohvi";
         ostukorv[2] = "Mesi";
-        Scanner klaviatuur = new Scanner(System.in);
-        System.out.println("Mida sa soovid osta! Kas Apelsini, Kohvi, Mett, Hapukoort?");
-        String vastus = klaviatuur.next();
-        System.out.println("Tere! Sa ostid just "+ vastus);
+        for (int i = 0; i <ostukorv.length ; i++) {
+
+        System.out.println(ostukorv[i]);
+        }
+//        Scanner klaviatuur = new Scanner(System.in);
+//        System.out.println("Mida sa soovid osta! Kas Apelsini, Kohvi, Mett, Hapukoort?");
+//        String vastus = klaviatuur.next();
+//        System.out.println("Tere! Sa ostid just "+ vastus);
         }
 
 
